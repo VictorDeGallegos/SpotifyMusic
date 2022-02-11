@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotifyblack"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:src="@drawable/spotify"
+        android:contentDescription="Spotify" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/vector_person"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_usuario"
+        android:minHeight="48dp"
+        android:textColorHint="@color/spotifycolor3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/vector_lock"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_password"
+        android:minHeight="48dp"
+        android:textColorHint="@color/spotifycolor3" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/spotifycolor"
+        android:text="@string/button_login" />
+</LinearLayout>
