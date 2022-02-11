@@ -1,4 +1,5 @@
 # SpotifyMusic
 Repositorio de clon de Spotify desarrollada en Android Studio
 
-![spotifylogin](https://user-images.githubusercontent.com/41756950/153524517-50938332-b531-44c0-8623-b936f68ad5e3.png)
+![NuevaApariencia](https://user-images.githubusercontent.com/41756950/153550634-9cf071f9-c7f7-4193-85f4-1a2f5b4de218.png)
+
