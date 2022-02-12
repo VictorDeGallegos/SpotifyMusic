@@ -18,7 +18,8 @@
         <item name="android:drawablePadding">12dp</item>
     </style>
 
-    <style name="Theme.Music.EditTextStyleNopassword" parent="Theme.Music">
-        <item name="android:textSize">13sp</item>
+
+    <style name="Theme.Music.DarkMode" parent="Theme.Music">
+        <item name="android:backgroundTint">@color/spotifyblack</item>
     </style>
 </resources>
