@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/spotifyblack">
 
     <ImageView
         android:id="@+id/ivLoginLogo"
@@ -90,6 +90,23 @@
         android:text=" OR "
         android:textColor="@color/spotifycolor3" />
 
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toBottomOf="@+id/desarrollador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/margin_default"
+        android:id="@+id/profile_image"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/me_profile"
+        android:tag="https://github.com/VictorDeGallegos"
+        android:onClick="openBrowser"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+
+ />
+
     <Button
         app:layout_constraintTop_toBottomOf="@+id/tvor"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +135,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btgoogle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="100dp"
+        android:layout_margin="30dp"
         android:id="@+id/tvnocuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,6 +154,18 @@
         android:layout_weight="0.5"
         android:text="¡Crea una gratis!"
         android:textColor="@color/spotifycolor"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/createaccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/desarrollador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desarrollado por"
+        android:textColor="@color/spotifycolor2"
         tools:layout_editor_absoluteY="650dp" />
 
     <TextView
