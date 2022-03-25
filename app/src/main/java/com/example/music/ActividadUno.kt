@@ -5,13 +5,19 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class ActividadUno : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+
+        createaccount.setOnClickListener{
+            startActivity(Intent(this, ActividadDos::class.java))
+        }
+
     }
 
     fun openBrowser(view: View) {
@@ -26,4 +32,5 @@ class MainActivity : AppCompatActivity() {
         intent.data = Uri.parse(url)
         startActivity(intent)
     }
+
 }

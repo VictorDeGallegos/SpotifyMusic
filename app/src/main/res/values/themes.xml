@@ -18,7 +18,9 @@
         <item name="android:drawablePadding">12dp</item>
     </style>
 
-
+    <style name="datePickerThemeSpotify" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:backgroundTint">#1DB954</item>
+    </style>
     <style name="Theme.Music.DarkMode" parent="Theme.Music">
         <item name="android:backgroundTint">@color/spotifyblack</item>
     </style>
