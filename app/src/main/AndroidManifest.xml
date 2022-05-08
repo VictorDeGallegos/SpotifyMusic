@@ -14,6 +14,9 @@
             android:exported="false" />
         <activity
             android:name=".ActividadUno"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

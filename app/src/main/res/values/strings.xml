@@ -13,4 +13,8 @@
     <string name="hint_usuario_registro">¿Cómo deberíamos llamarte?</string>
     <string name="linklogin"><a href="">¡Inicia Sesion!</a>
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
 </resources>

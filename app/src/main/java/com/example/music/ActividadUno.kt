@@ -5,14 +5,14 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_actividad_uno.*
 
 
 class ActividadUno : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_actividad_uno)
 
         createaccount.setOnClickListener{
             startActivity(Intent(this, ActividadDos::class.java))
