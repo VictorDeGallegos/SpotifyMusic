@@ -24,4 +24,10 @@
     <style name="Theme.Music.DarkMode" parent="Theme.Music">
         <item name="android:backgroundTint">@color/spotifyblack</item>
     </style>
+    <style name="Theme.Music.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Music.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Music.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

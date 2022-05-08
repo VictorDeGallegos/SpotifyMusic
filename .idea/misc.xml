@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.308" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.238" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.238" />
         <entry key="app/src/main/res/drawable/vector_email.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/vector_email_confirm.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/vector_lock.xml" value="0.2905" />
@@ -13,12 +15,21 @@
         <entry key="app/src/main/res/layout/activity_actividad_uno.xml" value="0.24414414414414415" />
         <entry key="app/src/main/res/layout/activity_inicio.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_menu_principal.xml" value="0.19814814814814816" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/app_bar_menu_principal.xml" value="0.18721755971594578" />
+        <entry key="app/src/main/res/layout/content_menu_principal.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_ayuda.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_descarga.xml" value="0.26126126126126126" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.26126126126126126" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19814814814814816" />
         <entry key="app/src/main/res/layout/fragment_inicio.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_premium.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.19814814814814816" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.29239766081871343" />
+        <entry key="app/src/main/res/layout/nav_header_menu_principal.xml" value="0.19814814814814816" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/menu_principal.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.26126126126126126" />
       </map>
     </option>
