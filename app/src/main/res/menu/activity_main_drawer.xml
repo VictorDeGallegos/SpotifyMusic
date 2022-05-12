@@ -17,10 +17,11 @@
         <item android:id="@+id/descargaFragment2"
             android:title="Descarga"/>
 
-        <item android:id="@+id/actividadUno"
-            android:title="Iniciar Sesión"/>
 
-        <item android:id="@+id/actividadDos"
-            android:title="Registrarse"/>
+        <item android:id="@+id/profile"
+            android:title="Perfil"/>
+
+        <item android:id="@+id/actividadUno"
+            android:title="Cerrar Sesion" />
     </group>
 </menu>

@@ -38,4 +38,8 @@
         android:id="@+id/ayudaFragment"
         android:name="com.example.music.AyudaFragment"
         android:label="AyudaFragment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.music.Profile"
+        android:label="Profile" />
 </navigation>

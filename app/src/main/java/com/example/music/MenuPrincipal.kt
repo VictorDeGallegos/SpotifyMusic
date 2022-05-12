@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.music.databinding.ActivityMenuPrincipalBinding
 
 class MenuPrincipal : AppCompatActivity() {
-
     private lateinit var appBarConfiguration: AppBarConfiguration
 private lateinit var binding: ActivityMenuPrincipalBinding
 

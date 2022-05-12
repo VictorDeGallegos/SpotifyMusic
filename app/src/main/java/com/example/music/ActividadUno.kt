@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.activity_actividad_uno.*
 
 
 class ActividadUno : AppCompatActivity() {
-
     private lateinit var binding: ActivityActividadUnoBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -49,14 +48,14 @@ class ActividadUno : AppCompatActivity() {
 
 
     }
-    override fun onStart() {
+  /*  override fun onStart() {
         super.onStart()
 
         if(firebaseAuth.currentUser != null){
             val intent = Intent(this, MenuPrincipal::class.java)
             startActivity(intent)
         }
-    }
+    }*/ //Metodo para hacer consistente el inicio de sesion al cerrar la app
 
     fun openBrowser(view: View) {
 
