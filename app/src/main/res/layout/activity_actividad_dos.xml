@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
         android:hint="@string/hint_email"
-        android:layoutDirection="rtl"
         android:textColorHint="@color/spotifycolor3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -195,7 +194,7 @@
         android:textColor="@color/spotifycolor"
         tools:layout_editor_absoluteY="650dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         app:layout_constraintTop_toBottomOf="@+id/login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

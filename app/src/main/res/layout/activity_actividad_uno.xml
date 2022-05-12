@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
         android:hint="@string/hint_email"
-        android:layoutDirection="rtl"
         android:textColorHint="@color/spotifycolor3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,17 +79,18 @@
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         app:layout_constraintTop_toBottomOf="@+id/resetpassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="@dimen/margin_default"
         android:id="@+id/btlogin"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/swRemember"
         android:backgroundTint="@color/spotifycolor"
-        android:text="@string/button_login" />
+        android:textColor="@color/white"
+        android:text="LOG IN"/>
 
     <TextView
         app:layout_constraintTop_toBottomOf="@+id/btlogin"

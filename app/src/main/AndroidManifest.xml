@@ -13,12 +13,12 @@
             android:name=".ActividadDos"
             android:exported="false" />
         <activity
-            android:name=".ActividadUno"
-            android:exported="false" />
-        <activity
             android:name=".MenuPrincipal"
             android:label="@string/title_activity_menu_principal"
             android:theme="@style/Theme.Music.NoActionBar"
+            android:exported="true" />
+        <activity
+            android:name=".ActividadUno"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

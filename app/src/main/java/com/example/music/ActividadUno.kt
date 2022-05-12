@@ -2,22 +2,60 @@ package com.example.music
 
 import android.content.Intent
 import android.net.Uri
+import android.os.Binder
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.music.databinding.ActivityActividadUnoBinding
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_actividad_uno.*
 
 
 class ActividadUno : AppCompatActivity() {
+
+    private lateinit var binding: ActivityActividadUnoBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityActividadUnoBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setContentView(R.layout.activity_actividad_uno)
-
-        createaccount.setOnClickListener{
-            startActivity(Intent(this, ActividadDos::class.java))
+        firebaseAuth = FirebaseAuth.getInstance()
+        binding.createaccount.setOnClickListener {
+            val intent = Intent(this, ActividadDos::class.java)
+            startActivity(intent)
         }
 
+        binding.btlogin.setOnClickListener{
+            val email = binding.emailEt.text.toString()
+            val pass = binding.passET.text.toString()
+
+            if (email.isNotEmpty() && pass.isNotEmpty()){
+                firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener{
+                    if (it.isSuccessful){
+                        val intent = Intent(this, MenuPrincipal::class.java)
+                        startActivity(intent)
+                    }else{
+                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }else{
+                Toast.makeText(this, "Los campos vacios no están permitidos", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+
+
+    }
+    override fun onStart() {
+        super.onStart()
+
+        if(firebaseAuth.currentUser != null){
+            val intent = Intent(this, MenuPrincipal::class.java)
+            startActivity(intent)
+        }
     }
 
     fun openBrowser(view: View) {
@@ -32,5 +70,7 @@ class ActividadUno : AppCompatActivity() {
         intent.data = Uri.parse(url)
         startActivity(intent)
     }
+
+
 
 }
