@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "64219262620",
+    "project_id": "spotimusi",
+    "storage_bucket": "spotimusi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64219262620:android:d0d97f9ce6c026234c0759",
+        "android_client_info": {
+          "package_name": "com.example.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64219262620-bndmdk8ck8ok2atgns2b95cdt5pfp9fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZuefyQgbOowOtlbIbyLELKxVpEZxDKrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64219262620-bndmdk8ck8ok2atgns2b95cdt5pfp9fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

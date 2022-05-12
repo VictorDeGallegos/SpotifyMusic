@@ -2,14 +2,14 @@
     <string name="app_name">Spotify</string>
 
     <string name="hint_usuario">Usuario</string>
-    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirmar Password</string>
     <string name="hint_remember">Remember me</string>
     <string name="button_login">Log in</string>
     <string name="linkregistro"><a href="">¡Crea una cuenta Gratis!</a>
     </string>
 
     <string name="hint_email">Correo Electronico</string>
-    <string name="hint_econfirmar_email">Confirmar Correo Electronico</string>
+    <string name="hint_password">Password</string>
     <string name="hint_usuario_registro">¿Cómo deberíamos llamarte?</string>
     <string name="linklogin"><a href="">¡Inicia Sesion!</a>
     </string>

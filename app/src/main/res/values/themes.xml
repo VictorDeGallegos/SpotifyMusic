@@ -16,6 +16,7 @@
     <style name="Theme.Music.EditTextStyle" parent="Theme.Music">
         <item name="android:textSize">16sp</item>
         <item name="android:drawablePadding">12dp</item>
+        <item name="android:textColor">#1DB954</item>
     </style>
 
     <style name="datePickerThemeSpotify" parent="android:Theme.Material.Light.Dialog">
@@ -30,4 +31,25 @@
     </style>
     <style name="Theme.Music.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Music.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Nueva implementacion de temas. -->
+
+    <style name="LoginTextInputOuterFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="LoginTextInputInnerFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
 </resources>
