@@ -28,4 +28,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="trending_albums_for_you">Trending albums for you</string>
+    <string name="the_getaway">The Getaway</string>
+    <string name="red_hot_chili_peppers">Red Hot Chili Peppers</string>
+    <string name="album_red_hot_chili_peppers">Album • Red Hot Chili Peppers</string>
 </resources>

@@ -5,6 +5,7 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.38425925925925924" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.308" />
+        <entry key="app/src/main/res/drawable-xhdpi/bg_liked_grid.xml" value="0.212" />
         <entry key="app/src/main/res/drawable/back_navar_l.xml" value="0.185" />
         <entry key="app/src/main/res/drawable/favourite_selected.xml" value="0.185" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.185" />
@@ -34,12 +35,13 @@
         <entry key="app/src/main/res/layout/fragment_ayuda.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_descarga.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.26126126126126126" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_inicio.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/layout/fragment_premium.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.19814814814814816" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.29239766081871343" />
         <entry key="app/src/main/res/layout/nav_header_menu_principal.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/recycler_item_trending_albums.xml" value="0.5" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
         <entry key="app/src/main/res/menu/menu_principal.xml" value="0.26126126126126126" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.26126126126126126" />
