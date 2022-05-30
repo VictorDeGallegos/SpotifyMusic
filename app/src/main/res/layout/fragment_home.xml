@@ -5,23 +5,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/spotifyblack"
     tools:context=".ui.home.HomeFragment" >
 
-    <TextView
-        android:id="@+id/text_home"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:background="#202125"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArtistN"
+        app:layout_constraintVertical_bias="1.0"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#00BA79"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#03FBA4"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:tabTextColor="#C5C5C5"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tu biblioteca" />
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Buenos Dias"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escuchado Recientemente"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/coverNavar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_music_note_24"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hometext"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewTitleN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:ems="10"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="title"
+        android:textAlignment="viewStart"
+        android:textColor="@color/spotifycolor"
+        android:textColorHighlight="#121212"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewArtistN"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPreviewN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/coverNavar"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/textViewArtistN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="60dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="artist"
+        android:textAlignment="viewStart"
+        android:textColor="#DAD8D8"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPreviewN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitleN"
+        tools:text="artist" />
+
+    <ImageView
+        android:id="@+id/imageViewPreviewN"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:padding="1dp"
+        android:src="@drawable/ic_round_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPlayN"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hometext"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayN"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/ic_round_play"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPreviewN"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNextN"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPreviewN" />
+
+    <ImageView
+        android:id="@+id/imageViewNextN"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
+        android:padding="1dp"
+        android:src="@drawable/ic_round_next"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPlayN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPlayN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
