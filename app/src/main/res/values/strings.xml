@@ -37,6 +37,8 @@
     <string name="your_library">Your Library</string>
     <string name="your_downloads">Your Downloads</string>
     <string name="playlists">Playlists</string>
+    <string name="edit_perfil">Editar perfil</string>
+    <string name="your_top_genres">Playlist</string>
     <string name="artists">Artists</string>
     <string name="downloaded">Downloaded</string>
 </resources>
