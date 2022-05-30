@@ -33,4 +33,10 @@
     <string name="the_getaway">The Getaway</string>
     <string name="red_hot_chili_peppers">Red Hot Chili Peppers</string>
     <string name="album_red_hot_chili_peppers">Album • Red Hot Chili Peppers</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="your_library">Your Library</string>
+    <string name="your_downloads">Your Downloads</string>
+    <string name="playlists">Playlists</string>
+    <string name="artists">Artists</string>
+    <string name="downloaded">Downloaded</string>
 </resources>
