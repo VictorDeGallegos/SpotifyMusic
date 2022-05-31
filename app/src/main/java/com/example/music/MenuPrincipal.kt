@@ -49,4 +49,5 @@ private lateinit var binding: ActivityMenuPrincipalBinding
         val navController = findNavController(R.id.nav_host_fragment_content_menu_principal)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }

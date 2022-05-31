@@ -4,20 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PremiumFragment">
+    tools:context=".PremiumFragment"
+    android:background="@color/spotifyblack">
+
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PREMIUM"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="42sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="52dp"
+        android:text="Usuario"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:weightSum="5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_picture"
+            android:src="@drawable/ic_logo_green" />
+
+        <TextView
+            android:id="@+id/text_view_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/plan"
+            android:textColor="@color/spotifycolor"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_clock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_flecha"
+            app:tint="@color/white" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
