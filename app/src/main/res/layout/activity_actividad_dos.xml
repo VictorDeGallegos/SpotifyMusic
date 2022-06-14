@@ -1,211 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActividadDos"
-    android:background="@color/spotifyblack">
+    tools:context=".RegisterActivity">
 
-    <ImageView
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/height_logo"
-        android:src="@drawable/spotify"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-    <Button
-        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/margin_default"
-        android:id="@+id/btregistrofacebook"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvor"
-        android:backgroundTint="#3b5998"
-        android:text="Registrate con Facebook" />
+        android:background="@color/spotifyblack"
+        tools:context=".RegisterActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="@dimen/width_logo"
+            android:layout_height="@dimen/height_logo"
+            android:src="@drawable/spotify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        style="@style/LoginTextInputOuterFieldStyle"
-        android:id="@+id/emailLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
-        android:hint="@string/hint_email"
-        android:textColorHint="@color/spotifycolor3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvorregistro">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailEt"
-            style="@style/Theme.Music.EditTextStyle"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btregistrofacebook"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-</com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@id/tvor"
+            android:layout_margin="@dimen/margin_default"
+            android:backgroundTint="#3b5998"
+            android:text="Registrate con Facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/LoginTextInputOuterFieldStyle"
-        android:id="@+id/passwordLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
-        android:drawablePadding="12dp"
-        android:hint="@string/hint_password"
-        android:textColorHint="@color/spotifycolor3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/spotifycolor"
+        <com.google.android.material.textfield.TextInputLayout
 
-       >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passET"
+            android:id="@+id/emailLayout"
+            style="@style/LoginTextInputOuterFieldStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default"
+            android:hint="@string/hint_email"
+            android:textColorHint="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvorregistro">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                style="@style/Theme.Music.EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLayout"
+            style="@style/LoginTextInputOuterFieldStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_password"
+            android:textColorHint="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout"
             app:passwordToggleEnabled="true"
-            style="@style/Theme.Music.EditTextStyle"
-            android:layout_width="match_parent"
+            app:passwordToggleTint="@color/spotifycolor"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passET"
+                style="@style/Theme.Music.EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPasswordLayout"
+            style="@style/LoginTextInputOuterFieldStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_margin="@dimen/margin_default"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_confirm_password"
+            android:textColorHint="@color/spotifycolor3"
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmPasswordLayout"
-        style="@style/LoginTextInputOuterFieldStyle"
-        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/margin_default"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/spotifycolor">
 
-        android:drawablePadding="12dp"
-        android:hint="@string/hint_confirm_password"
-        android:textColorHint="@color/spotifycolor3"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/spotifycolor"
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPassEt"
-            style="@style/Theme.Music.EditTextStyle"
-            android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPassEt"
+                style="@style/Theme.Music.EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userLayout"
+            style="@style/LoginTextInputOuterFieldStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@id/confirmPasswordLayout"
+            android:layout_margin="@dimen/margin_default"
+            android:checked="false"
+            android:hint="@string/hint_usuario_registro"
+            android:layoutDirection="rtl"
+            android:textColorHint="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userLayout"
-        style="@style/LoginTextInputOuterFieldStyle"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/margin_default"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/confirmPasswordLayout"
-        android:checked="false"
-        android:hint="@string/hint_usuario_registro"
-        android:layoutDirection="rtl"
-        android:textColorHint="@color/spotifycolor3"
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userEt"
-            style="@style/Theme.Music.EditTextStyle"
-            android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userEt"
+                style="@style/Theme.Music.EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvor"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@id/userLayout"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="12dp"
+            android:text="Fecha de nacimiento "
+            android:textColor="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userLayout" />
 
 
+        <TextView
+            android:id="@+id/tvorregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btregistrofacebook"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:drawablePadding="12dp"
+            android:text=" OR "
+            android:textColor="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btregistrofacebook" />
 
-    <TextView
-        android:id="@+id/tvor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userLayout"
-        android:layout_centerInParent="true"
-        android:layout_margin="10dp"
-        android:layout_marginTop="8dp"
-        android:drawablePadding="12dp"
-        android:text="Fecha de nacimiento "
-        android:textColor="@color/spotifycolor3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userLayout" />
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default"
+            android:backgroundTint="@color/spotifycolor"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Selecciona tu fecha de cumpleaños...."
+            android:textColor="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvor" />
 
+        <TextView
+            android:id="@+id/tvnocuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:text="¿Ya tiene cuenta?"
+            android:textColor="@color/spotifycolor3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
+            app:layout_constraintTop_toBottomOf="@+id/etDate" />
 
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/btregistrofacebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="10dp"
-        android:id="@+id/tvorregistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btregistrofacebook"
-        android:layout_centerInParent="true"
-        android:drawablePadding="12dp"
-        android:text=" OR "
-        android:textColor="@color/spotifycolor3" />
+        <TextView
 
-    <EditText
-        android:id="@+id/etDate"
-        app:layout_constraintTop_toBottomOf="@+id/tvor"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/margin_default"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/spotifycolor"
-        android:text="Selecciona tu fecha de cumpleaños...."
-        android:clickable="false"
-        android:focusable="false"
-        android:textColor="@color/spotifycolor3"/>
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/linklogin"
+            android:textColor="@color/spotifycolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvnocuenta"
+            tools:layout_editor_absoluteY="650dp" />
 
-    <TextView
-        android:id="@+id/tvnocuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="30dp"
-        android:text="¿Ya tiene cuenta?"
-        android:textColor="@color/spotifycolor3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/etDate" />
-
-    <TextView
-
-        app:layout_constraintTop_toBottomOf="@+id/tvnocuenta"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="5dp"
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/linklogin"
-        android:textColor="@color/spotifycolor"
-        tools:layout_editor_absoluteY="650dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="5dp"
-        android:id="@+id/registrarme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTRARME"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/spotifycolor"
-        tools:layout_editor_absoluteY="650dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registrarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/spotifycolor"
+            android:text="REGISTRARME"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            tools:layout_editor_absoluteY="650dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

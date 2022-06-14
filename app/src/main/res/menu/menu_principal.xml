@@ -4,13 +4,18 @@
     <item android:id="@+id/ayudaFragment"
         android:title="@string/action_settings"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        />
     <item android:id="@+id/faq"
         android:title="FAQ"
         android:orderInCategory="100"
         app:showAsAction="never" />
     <item android:id="@+id/about"
         android:title="Acerca de"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/logout"
+        android:title="Cerrar Sesion"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>

@@ -15,14 +15,14 @@
         android:textColor="@color/spotifycolor"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView_Promo"
+        app:layout_constraintBottom_toTopOf="@+id/tvCorreo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
-        android:id="@+id/textView_Promo"
+        android:id="@+id/tvCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Obtén 3 meses de Premium gratis"

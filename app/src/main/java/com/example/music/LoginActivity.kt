@@ -2,17 +2,15 @@ package com.example.music
 
 import android.content.Intent
 import android.net.Uri
-import android.os.Binder
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.music.databinding.ActivityActividadUnoBinding
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_actividad_uno.*
 
 
-class ActividadUno : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityActividadUnoBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -23,7 +21,7 @@ class ActividadUno : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         binding.createaccount.setOnClickListener {
-            val intent = Intent(this, ActividadDos::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
@@ -48,14 +46,14 @@ class ActividadUno : AppCompatActivity() {
 
 
     }
-  /*  override fun onStart() {
-        super.onStart()
+    /*  override fun onStart() {
+          super.onStart()
 
-        if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, MenuPrincipal::class.java)
-            startActivity(intent)
-        }
-    }*/ //Metodo para hacer consistente el inicio de sesion al cerrar la app
+          if(firebaseAuth.currentUser != null){
+              val intent = Intent(this, MenuPrincipal::class.java)
+              startActivity(intent)
+          }
+      }*/ //Metodo para hacer consistente el inicio de sesion al cerrar la app
 
     fun openBrowser(view: View) {
 

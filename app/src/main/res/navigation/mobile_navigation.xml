@@ -18,28 +18,30 @@
         tools:layout="@layout/fragment_slideshow" />
     <activity
         android:id="@+id/actividadUno"
-        android:name="com.example.music.ActividadUno"
-        android:label="ActividadUno" />
+        android:name="com.example.music.LoginActivity"
+        android:label="ActividadUno"
+        tools:layout="@layout/activity_actividad_uno"/>
     <activity
         android:id="@+id/actividadDos"
-        android:name="com.example.music.ActividadDos"
+        android:name="com.example.music.RegisterActivity"
         android:label="activity_actividad_dos"
         tools:layout="@layout/activity_actividad_dos" />
     <fragment
         android:id="@+id/premiumFragment"
         android:name="com.example.music.PremiumFragment"
-        android:label="fragment_ayuda"
-        tools:layout="@layout/fragment_ayuda" />
+        android:label="Premium"
+        tools:layout="@layout/fragment_premium" />
     <fragment
         android:id="@+id/descargaFragment2"
         android:name="com.example.music.DescargaFragment"
-        android:label="DescargaFragment" />
+        android:label="Descargas"
+        tools:layout="@layout/fragment_descarga"/>
     <fragment
         android:id="@+id/ayudaFragment"
         android:name="com.example.music.AyudaFragment"
-        android:label="AyudaFragment" />
+        android:label="Ayuda" />
     <fragment
         android:id="@+id/profile"
         android:name="com.example.music.Profile"
-        android:label="Profile" />
+        android:label="Perfil" />
 </navigation>
