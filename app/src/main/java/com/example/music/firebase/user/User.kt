@@ -1,8 +1,5 @@
 package com.example.music.firebase.user
 
-data class User(
-    var users: UserInfo = UserInfo()
-)
 
 data class UserInfo(
     var authId: String = "",

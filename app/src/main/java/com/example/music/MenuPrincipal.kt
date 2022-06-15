@@ -3,6 +3,7 @@ package com.example.music
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -16,9 +17,14 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.music.albums.AlbumModel
 import com.example.music.databinding.ActivityMenuPrincipalBinding
+import com.example.music.firebase.user.UserInfo
 import com.example.music.util.Constants
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import com.xwray.groupie.GroupieAdapter
 
 class MenuPrincipal : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -80,7 +86,8 @@ class MenuPrincipal : AppCompatActivity() {
     private fun doLogOut() {
         FirebaseAuth.getInstance().signOut()
         val sharedPref = getSharedPreferences(
-            Constants.PREF_KEY, Context.MODE_PRIVATE)
+            Constants.PREF_KEY, Context.MODE_PRIVATE
+        )
         sharedPref.edit().clear().commit()
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
