@@ -8,7 +8,9 @@ import com.xwray.groupie.viewbinding.BindableItem
 
 class AlbumItem(var albumModel: AlbumModel): BindableItem<EachItemBinding>() {
     override fun bind(binding: EachItemBinding, position: Int) {
-       binding.textView.text=albumModel.title
+        binding.title.text=albumModel.title
+        binding.artist.text=albumModel.artist
+        binding.year.text= albumModel.year.toString()
         Glide.with(binding.root.context).load(albumModel.img).into(binding.imageViewAlbum)
     }
 
