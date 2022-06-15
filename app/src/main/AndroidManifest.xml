@@ -12,13 +12,10 @@
         android:theme="@style/Theme.Music" >
         <activity
             android:name=".RegisterActivity"
+            android:noHistory="true"
             android:exported="true" >
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity
@@ -28,7 +25,14 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
+            android:noHistory="true"
             android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>

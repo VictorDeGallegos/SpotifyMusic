@@ -52,14 +52,14 @@ class LoginActivity : AppCompatActivity() {
 
 
     }
-    /*  override fun onStart() {
+      override fun onStart() {
           super.onStart()
 
           if(firebaseAuth.currentUser != null){
               val intent = Intent(this, MenuPrincipal::class.java)
               startActivity(intent)
           }
-      }*/ //Metodo para hacer consistente el inicio de sesion al cerrar la app
+      } //Metodo para hacer consistente el inicio de sesion al cerrar la app
 
     fun openBrowser(view: View) {
 
