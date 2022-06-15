@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btlogin"
             android:layout_centerInParent="true"
-            android:layout_margin="40dp"
+            android:layout_margin="25dp"
             android:drawablePadding="12dp"
             android:text=" OR "
             android:textColor="@color/spotifycolor3"

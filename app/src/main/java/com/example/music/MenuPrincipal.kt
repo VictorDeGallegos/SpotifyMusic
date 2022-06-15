@@ -59,6 +59,18 @@ class MenuPrincipal : AppCompatActivity() {
                 doLogOut()
                 return false
             }
+            R.id.settings -> {
+                Toast.makeText(this, "Clicked Settings", Toast.LENGTH_SHORT).show()
+                return false
+            }
+            R.id.faq -> {
+                Toast.makeText(this, "Clicked FAQ", Toast.LENGTH_SHORT).show()
+                return false
+            }
+            R.id.about -> {
+                Toast.makeText(this, "Clicked About", Toast.LENGTH_SHORT).show()
+                return false
+            }
             else -> {
                 return false
             }
