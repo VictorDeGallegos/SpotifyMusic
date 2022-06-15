@@ -1,5 +1,6 @@
 package com.example.music
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.music.databinding.ActivityActividadUnoBinding
+import com.example.music.util.Constants
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -32,6 +34,10 @@ class LoginActivity : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener{
                     if (it.isSuccessful){
+                        val sharedPref = getSharedPreferences(
+                            Constants.PREF_KEY, Context.MODE_PRIVATE)
+                        sharedPref.edit().putString(Constants.PREF_USERID, it.result.user?.uid
+                            .toString()).commit()
                         val intent = Intent(this, MenuPrincipal::class.java)
                         startActivity(intent)
                     }else{
