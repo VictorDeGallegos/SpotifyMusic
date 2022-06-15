@@ -9,28 +9,30 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/premiumNombretv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="Usuario"
         android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/premiumEmailtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Email"
         android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/premiumNombretv" />
 
     <LinearLayout
         android:id="@+id/linear_layout_top_bar"
@@ -41,7 +43,7 @@
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:weightSum="5"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/premiumEmailtv"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
